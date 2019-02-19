@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+
+    test_mosigra:
+        build: .
+        volumes:
+            - ./skill_env:/srv
+        command: bash -c "python3 -m unittest"
